@@ -385,20 +385,10 @@ export default function WarriorsAidLandingPage() {
         </section>
       </main>
 
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row mx-auto">
+      <footer className="w-full border-t ">
+        <div className=" flex flex-col  justify-between  md:h-24 md:flex-row mx-auto">
           <WarriorsAidLogo />
-          <div className="flex gap-4">
-            <Link href="/privacy-policy" className="text-sm font-medium transition-colors hover:text-primary">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-sm font-medium transition-colors hover:text-primary">
-              Terms of Service
-            </Link>
-            <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-              Contact Us
-            </Link>
-          </div>
+          
         </div>
       </footer>
     </div>
