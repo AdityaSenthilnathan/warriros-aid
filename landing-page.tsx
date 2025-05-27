@@ -120,7 +120,7 @@ export default function WarriorsAidLandingPage() {
                   </li>
                 </ul>
                 <p className="text-lg">
-                  By joining Warriors Aid, you become part of a nationwide movement that recognizes the true cost of
+                  By joining Warriors Aid, you become part of a movement that recognizes the true cost of
                   service. Support directly impacts veterans in your community, providing them with the resources,
                   dignity, and respect they&#39;ve earned through their sacrifice. Together, we can ensure that those who
                   defended our freedom can fully enjoy the liberties they helped protect.
@@ -209,14 +209,14 @@ export default function WarriorsAidLandingPage() {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h3 className="text-xl font-bold mb-4">Rationale for Infographic Design</h3>
                 <p className="text-left">
-                  This infographic employs statistics and iconography to create an immediate emotional impact. The use
-                  of red for the suicide statistics deliberately evokes urgency and alarm, while the minimalist design
-                  ensures the gravity of these numbers isn&#39;t lost in visual clutter. By presenting these statistics in
+                  This infographic shows statistics and iconography to create an immediate emotional impact. The use
+                  of red for the suicide statistics deliberately create a sense of urgency, while a minimalist design
+                  keeps the gravity of these numbers isn&#39;t lost in visual clutter. By presenting these statistics in
                   isolation, we force the viewer to confront the reality of veteran struggles without distraction. The
                   progression from mental health to homelessness to unemployment creates a narrative of cause and effect
-                  that educated viewers will immediately comprehend, making a logical appeal (logos) while
-                  simultaneously evoking emotional response (pathos). This visual rhetoric serves to transform abstract
-                  statistics into human stories, compelling action through both intellectual and emotional channels.
+                  that educated viewers will immediately comprehend, making a logical appeal while
+                  simultaneously creating an emotional response. This visual rhetoric serves to makes 
+                  statistics into real stories, compelling action through testimonies.
                 </p>
               </div>
             </div>
