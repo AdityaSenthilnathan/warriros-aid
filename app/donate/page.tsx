@@ -11,12 +11,10 @@ import WarriorsAidLogo from "../../logo"
 
 export default function DonatePage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center w-full bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <WarriorsAidLogo />
-          </Link>
+        <div className="container flex h-16 items-center justify-between mx-auto">
+          <WarriorsAidLogo />
           <nav className="hidden md:flex gap-6">
             <Link href="/#about" className="text-sm font-medium transition-colors hover:text-primary">
               About
@@ -24,20 +22,19 @@ export default function DonatePage() {
             <Link href="/#mission" className="text-sm font-medium transition-colors hover:text-primary">
               Our Mission
             </Link>
-            <Link href="/#impact" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/impact" className="text-sm font-medium transition-colors hover:text-primary">
               Our Impact
             </Link>
-            <Link href="/#join" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/volunteer" className="text-sm font-medium transition-colors hover:text-primary">
               Join Us
             </Link>
           </nav>
-          <Button asChild variant="outline">
-            <Link href="/volunteer">Volunteer</Link>
+          <Button asChild>
+            <Link href="/donate">Donate Now</Link>
           </Button>
         </div>
       </header>
-
-      <main className="flex-1">
+      <main className="flex-1 w-full">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
           <div className="container px-4 md:px-6">
@@ -445,19 +442,16 @@ export default function DonatePage() {
       </main>
 
       <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row mx-auto">
           <WarriorsAidLogo />
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 Warriors Aid. All rights reserved.
-          </p>
           <div className="flex gap-4">
-            <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/privacy-policy" className="text-sm font-medium transition-colors hover:text-primary">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/terms" className="text-sm font-medium transition-colors hover:text-primary">
               Terms of Service
             </Link>
-            <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
+            <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
               Contact Us
             </Link>
           </div>

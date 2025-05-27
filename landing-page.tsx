@@ -1,16 +1,42 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
 import { Users, DollarSign, Brain, Play, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import React from "react"
+import { animate, stagger } from "animejs"
 
 import WarriorsAidLogo from "./logo"
 
 export default function WarriorsAidLandingPage() {
+  React.useEffect(() => {
+    animate(
+      ".hero-animate",
+      {
+        translateY: [40, 0],
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1200,
+        delay: stagger(120),
+      }
+    )
+    animate(
+      ".cta-animate",
+      {
+        scale: [0.8, 1],
+        opacity: [0, 1],
+        easing: "easeOutBack",
+        duration: 1000,
+        delay: 800,
+      }
+    )
+  }, [])
+
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col items-center w-full bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-16 items-center justify-between mx-auto">
           <WarriorsAidLogo />
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
@@ -32,27 +58,27 @@ export default function WarriorsAidLandingPage() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 w-full ">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50  ">
+          <div  >
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center pl-[12vw]">
+              <div className="space-y-4 ">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none hero-animate">
                   Supporting Those Who Served
                 </h1>
-                <p className="text-xl text-muted-foreground md:text-2xl italic">
+                <p className="text-xl text-muted-foreground md:text-2xl italic hero-animate">
                   "Honoring Their Sacrifice, Rebuilding Their Future"
                 </p>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                <p className="max-w-[600px] text-muted-foreground md:text-xl hero-animate">
                   Warriors Aid is dedicated to providing comprehensive support for veterans facing mental health
                   challenges, reintegration difficulties, and financial hardship after their service.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-red-600 hover:bg-red-700" asChild>
-                    <Link href="/volunteer">Join Our Mission</Link>
+                  <Button size="lg" className="bg-red-600 hover:bg-red-700 cta-animate" asChild>
+                    Join Our Mission
                   </Button>
-                  <Button size="lg" variant="outline" asChild>
+                  <Button size="lg" variant="outline" className="cta-animate" asChild>
                     <Link href="#mission">Learn More</Link>
                   </Button>
                 </div>
@@ -72,9 +98,9 @@ export default function WarriorsAidLandingPage() {
         </section>
 
         {/* Statement of Purpose Section */}
-        <section id="mission" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-[800px] space-y-6 text-center">
+        <section id="mission" className="w-full py-12 md:py-24 lg:py-32 pl-[9vw]">
+          <div className="container px-4 md:px-6 ">
+            <div className="mx-auto max-w-[800px] space-y-6 text-center ">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Statement of Purpose</h2>
               <p className="text-xl text-muted-foreground">Why Warriors Aid deserves your support</p>
               <div className="space-y-4 text-left">
@@ -111,15 +137,13 @@ export default function WarriorsAidLandingPage() {
                   The time to act is now. Our veterans stood for us, so now it&#39;s time we stand for them.
                 </p>
               </div>
-              <Button size="lg" className="mt-6" asChild>
-                <Link href="/volunteer">Join Our Cause</Link>
-              </Button>
+              
             </div>
           </div>
         </section>
 
         {/* Visual Rhetoric 1: Infographic */}
-        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-slate-50">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-slate-50 pl-[9vw]">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-[800px] space-y-6 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">The Veteran Crisis</h2>
@@ -208,9 +232,9 @@ export default function WarriorsAidLandingPage() {
         </section>
 
         {/* Visual Rhetoric 2: Before/After Transformation */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-[800px] space-y-6 text-center">
+        <section className="w-full py-12 md:py-24 lg:py-32 pl-[9vw]">
+          <div className="container px-4 md:px-6 ">
+            <div className="mx-auto max-w-[800px] space-y-6 text-center ">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">The Warriors Aid Impact</h2>
               <p className="text-xl text-muted-foreground">Transforming lives through comprehensive support</p>
 
@@ -273,9 +297,9 @@ export default function WarriorsAidLandingPage() {
         </section>
 
         {/* Multimedia Piece: Video Concept */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-[800px] space-y-6 text-center">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50 pl-[9vw]">
+          <div className="container px-4 md:px-6 ">
+            <div className="mx-auto max-w-[800px] space-y-6 text-center ">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Hear Their Stories</h2>
               <p className="text-xl text-muted-foreground">Veterans sharing their journey with Warriors Aid</p>
 
@@ -317,8 +341,8 @@ export default function WarriorsAidLandingPage() {
         </section>
 
         {/* Slogan Rationale */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 pl-[9vw]">
+          <div className="container px-4 md:px-6 ">
             <div className="mx-auto max-w-[800px] space-y-6 text-center">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Slogan</h2>
               <p className="text-3xl italic font-medium text-blue-700">
@@ -360,59 +384,18 @@ export default function WarriorsAidLandingPage() {
                   Together, we can make a difference in the lives of those who served.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-white text-blue-700 hover:bg-gray-100" asChild>
-                    <Link href="/donate">Donate Now</Link>
-                  </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-white text-white hover:bg-blue-800 bg-blue-800/40"
-                    asChild
-                  >
-                    <Link href="/volunteer">Volunteer</Link>
-                  </Button>
+                  
                 </div>
               </div>
-              <div className="space-y-4">
-                <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-                  <CardHeader>
-                    <CardTitle className="text-white">Stay Connected</CardTitle>
-                    <CardDescription className="text-white/70">
-                      Sign up for our newsletter to receive updates on our impact and upcoming events.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <form className="space-y-4">
-                      <div className="grid gap-2">
-                        <label htmlFor="email" className="sr-only">
-                          Email
-                        </label>
-                        <input
-                          id="email"
-                          placeholder="Enter your email"
-                          type="email"
-                          className="w-full rounded-md border border-white/20 bg-white/10 px-3 py-2 text-white placeholder:text-white/50"
-                          required
-                        />
-                      </div>
-                      <Button type="submit" className="w-full bg-white text-blue-700 hover:bg-gray-100">
-                        Subscribe
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
-              </div>
+              
             </div>
           </div>
         </section>
       </main>
 
       <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row mx-auto">
           <WarriorsAidLogo />
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 Warriors Aid. All rights reserved.
-          </p>
           <div className="flex gap-4">
             <Link href="/privacy-policy" className="text-sm font-medium transition-colors hover:text-primary">
               Privacy Policy

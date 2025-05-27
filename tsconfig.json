@@ -1,4 +1,10 @@
 {
+  "noImplicitAny": false,
+    "include": ["**/*.ts", "test"],
+
+    "typeRoots": [
+        "../node_modules/@types/"
+    ],
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -13,6 +19,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    
     "plugins": [
       {
         "name": "next"
