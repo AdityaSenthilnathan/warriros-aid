@@ -46,7 +46,7 @@ export default function ContactPage() {
             <div className="mx-auto max-w-[800px] space-y-4 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Contact Us</h1>
               <p className="text-xl text-muted-foreground">
-                We're here to answer your questions and hear your feedback
+                We&#39;re here to answer your questions and hear your feedback
               </p>
             </div>
           </div>

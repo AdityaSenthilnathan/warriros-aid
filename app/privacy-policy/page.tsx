@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
                 <div className="space-y-3">
                   <h2 className="text-2xl font-bold">Introduction</h2>
                   <p>
-                    Warriors Aid ("we," "our," or "us") respects your privacy and is committed to protecting it through
+                    Warriors Aid (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting it through
                     our compliance with this policy. This policy describes the types of information we may collect from
                     you or that you may provide when you visit our website and our practices for collecting, using,
                     maintaining, protecting, and disclosing that information.
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
                   <h2 className="text-2xl font-bold">Changes to Our Privacy Policy</h2>
                   <p>
                     We may update our privacy policy from time to time. If we make material changes to how we treat our
-                    users' personal information, we will notify you through a notice on the website home page.
+                    users&#39; personal information, we will notify you through a notice on the website home page.
                   </p>
                 </div>
 

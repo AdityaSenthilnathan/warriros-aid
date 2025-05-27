@@ -74,7 +74,7 @@ export default function ImpactPage() {
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2 text-blue-700">
                     <Quote className="h-5 w-5" />
-                    <h3 className="text-2xl font-bold">James' Story</h3>
+                    <h3 className="text-2xl font-bold">James&#39; Story</h3>
                   </div>
                   <h4 className="text-xl font-medium">Finding Hope After Combat</h4>
                   <p className="text-muted-foreground">
@@ -82,14 +82,14 @@ export default function ImpactPage() {
                     impossible. Nightmares, anxiety, and isolation became his daily reality.
                   </p>
                   <p className="text-muted-foreground">
-                    Through Warriors Aid's specialized mental health program, James connected with therapists who
+                    Through Warriors Aid&#39;s specialized mental health program, James connected with therapists who
                     understood military trauma and fellow veterans who shared his experiences. The peer support group
                     became his lifeline.
                   </p>
                   <p className="font-medium">
-                    "For the first time since coming home, I didn't feel alone. Warriors Aid gave me the tools to
-                    process what I'd been through and showed me there was a path forward. Today, I'm working as a
-                    carpenter, sleeping through the night, and even mentoring other veterans."
+                    &quot;For the first time since coming home, I didn&#39;t feel alone. Warriors Aid gave me the tools to
+                    process what I&#39;d been through and showed me there was a path forward. Today, I&#39;m working as a
+                    carpenter, sleeping through the night, and even mentoring other veterans.&quot;
                   </p>
                   <div className="pt-4">
                     <Button asChild>
@@ -113,7 +113,7 @@ export default function ImpactPage() {
                 <div className="space-y-4 md:order-1">
                   <div className="inline-flex items-center gap-2 text-blue-700">
                     <Quote className="h-5 w-5" />
-                    <h3 className="text-2xl font-bold">Maria's Story</h3>
+                    <h3 className="text-2xl font-bold">Maria&#39;s Story</h3>
                   </div>
                   <h4 className="text-xl font-medium">Building a New Career</h4>
                   <p className="text-muted-foreground">
@@ -121,14 +121,14 @@ export default function ImpactPage() {
                     experience, she struggled to translate her military skills to civilian employment.
                   </p>
                   <p className="text-muted-foreground">
-                    Warriors Aid's career transition program helped Maria identify transferable skills, build a
+                    Warriors Aid&#39;s career transition program helped Maria identify transferable skills, build a
                     professional network, and connect with employers who value military experience. She received resume
                     assistance, interview coaching, and professional certification funding.
                   </p>
                   <p className="font-medium">
-                    "The career counselors at Warriors Aid understood exactly what I was going through. They helped me
+                    &quot;The career counselors at Warriors Aid understood exactly what I was going through. They helped me
                     see that my military experience was valuable. Within three months, I landed a management position at
-                    a logistics company. Now I'm financially stable and building a career I love."
+                    a logistics company. Now I&#39;m financially stable and building a career I love.&quot;
                   </p>
                   <div className="pt-4">
                     <Button asChild>
@@ -152,7 +152,7 @@ export default function ImpactPage() {
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2 text-blue-700">
                     <Quote className="h-5 w-5" />
-                    <h3 className="text-2xl font-bold">Robert's Story</h3>
+                    <h3 className="text-2xl font-bold">Robert&#39;s Story</h3>
                   </div>
                   <h4 className="text-xl font-medium">A Place to Call Home</h4>
                   <p className="text-muted-foreground">
@@ -160,14 +160,14 @@ export default function ImpactPage() {
                     home. With a wife and two children, he found himself on the brink of homelessness.
                   </p>
                   <p className="text-muted-foreground">
-                    Warriors Aid's emergency housing program provided temporary shelter for Robert's family while
-                    connecting him with VA benefits he didn't know he qualified for. The financial counseling program
+                    Warriors Aid&#39;s emergency housing program provided temporary shelter for Robert&#39;s family while
+                    connecting him with VA benefits he didn&#39;t know he qualified for. The financial counseling program
                     helped him create a sustainable budget and negotiate with creditors.
                   </p>
                   <p className="font-medium">
-                    "Warriors Aid stepped in when we had nowhere else to turn. They didn't just put a roof over our
-                    heads—they gave us the support to get back on our feet. Today, we're in our own apartment, I'm
-                    managing my finances, and my kids have stability again."
+                    &quot;Warriors Aid stepped in when we had nowhere else to turn. They didn&#39;t just put a roof over our
+                    heads—they gave us the support to get back on our feet. Today, we&#39;re in our own apartment, I&#39;m
+                    managing my finances, and my kids have stability again.&quot;
                   </p>
                   <div className="pt-4">
                     <Button asChild>

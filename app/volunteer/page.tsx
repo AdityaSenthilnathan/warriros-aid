@@ -50,7 +50,7 @@ export default function VolunteerPage() {
             <div className="mx-auto max-w-[800px] space-y-4 text-center">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Become a Volunteer</h1>
               <p className="text-xl text-muted-foreground">
-                Join our team of dedicated volunteers making a difference in veterans' lives
+                Join our team of dedicated volunteers making a difference in veterans&#39; lives
               </p>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function VolunteerPage() {
                   </div>
 
                   <div className="space-y-3">
-                    <Label>I'm interested in volunteering for:</Label>
+                    <Label>I&#39;m interested in volunteering for:</Label>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                       <div className="flex items-center space-x-2">
                         <Checkbox id="peer-support" />
@@ -275,7 +275,7 @@ export default function VolunteerPage() {
                     <Label htmlFor="motivation">Why do you want to volunteer with Warriors Aid?</Label>
                     <Textarea
                       id="motivation"
-                      placeholder="Tell us why you're interested in volunteering with us"
+                      placeholder="Tell us why you&#39;re interested in volunteering with us"
                       className="min-h-[100px]"
                     />
                   </div>

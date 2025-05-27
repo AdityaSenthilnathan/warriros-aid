@@ -119,7 +119,7 @@ export default function TermsPage() {
                   <h2 className="text-2xl font-bold">Changes to Terms</h2>
                   <p>
                     We reserve the right to change these terms at any time. We will provide notice of any changes by
-                    updating the "Last Updated" date at the top of these Terms of Service.
+                    updating the &quot;Last Updated&quot; date at the top of these Terms of Service.
                   </p>
                 </div>
 
