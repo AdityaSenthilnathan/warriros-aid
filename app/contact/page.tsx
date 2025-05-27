@@ -93,7 +93,7 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium">Email</h3>
                         <p className="text-muted-foreground">info@warriorsaid.org</p>
-                        <p className="text-sm text-muted-foreground">We'll respond within 24-48 hours</p>
+                        <p className="text-sm text-muted-foreground">We&#39;ll respond within 24-48 hours</p>
                       </div>
                     </CardContent>
                   </Card>
