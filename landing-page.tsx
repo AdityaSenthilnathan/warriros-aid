@@ -273,10 +273,10 @@ export default function WarriorsAidLandingPage() {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h3 className="text-xl font-bold mb-4">Rationale for Transformation Visual</h3>
                 <p className="text-left">
-                  This before/after visual employs a powerful rhetorical technique known as "juxtaposition" to
-                  illustrate the transformative impact of Warriors Aid&#39;s programs. The stark contrast between the
-                  "before" and "after" scenarios creates a compelling narrative arc that resonates with viewers on both
-                  emotional and logical levels. The visual establishes ethos (credibility) by showing concrete, tangible
+                  This before/after visual shows the rhetorical technique of juxtaposition to
+                  illustrate the impact of Warriors Aid&#39;s programs. The contrast between the
+                  "before" and "after" scenarios creates an impactful narrative that resonates with viewers on both
+                  emotional and logical levels. The visual establishes credibility by showing the tangible
                   outcomes of our work rather than making abstract claims. The parallel structure of the images and
                   bullet points creates a clear cause-and-effect relationship that educated viewers will immediately
                   comprehend. By focusing on the human transformation rather than organizational processes, this visual
@@ -316,14 +316,13 @@ export default function WarriorsAidLandingPage() {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h3 className="text-xl font-bold mb-4">Rationale for Video Testimonial</h3>
                 <p className="text-left">
-                  This multimedia piece leverages the power of first-person narrative to create an immersive emotional
-                  experience that static visuals alone cannot achieve. By featuring real veterans telling their own
-                  stories in their own voices, we establish unassailable authenticity (ethos) while creating a direct
-                  emotional connection with viewers (pathos). The video format allows for a complete narrative, showing
+                  This multimedia piece leverages the power of first-person narrative to create and emotional
+                  experience that static visuals alone cannot achieve. By featuring a veteran telling their own
+                  story in their own voice, we establish their authenticity while creating a direct
+                  emotional connection with viewers. The video format allows for a strong narrative, showing
                   the challenges, the intervention, and the transformation, which builds a compelling logical case for
-                  our effectiveness (logos). The cinematic quality and professional production values signal respect for
-                  both the subject matter and the audience, acknowledging the sophistication of educated viewers while
-                  still making the content accessible and emotionally resonant. The title "My Journey Home" frames the
+                  our effectiveness. The more grounded production style, with less polished images, values signal respect for
+                  both the subject matter and the audience, acknowledging the value of each person, beyond just an image alone. The title "My Journey Home" frames the
                   veteran experience as an ongoing process rather than a fixed state, inviting viewers to see themselves
                   as potential participants in that journey rather than mere observers.
                 </p>
@@ -344,8 +343,8 @@ export default function WarriorsAidLandingPage() {
               <div className="bg-white p-6 rounded-xl shadow-md">
                 <h3 className="text-xl font-bold mb-4">Slogan Rationale</h3>
                 <p className="text-left">
-                  Our slogan "Honoring Their Sacrifice, Rebuilding Their Future" employs rhetorical techniques to show
-                  our mission while resonating with multiple audiences. The parallel structure creates a rhythm that
+                  Our slogan "Honoring Their Sacrifice, Rebuilding Their Future" uses rhetorical techniques to show
+                  our mission while grabbing with multiple audiences. The structure creates a rhythm that
                   makes the phrase memorable. The first half, "Honoring Their Sacrifice," acknowledges the debt society
                   owes to veterans, appealing to the values and establishing common ground with the audience. The second
                   half, "Rebuilding Their Future," shifts from passive recognition to active intervention, signaling our
