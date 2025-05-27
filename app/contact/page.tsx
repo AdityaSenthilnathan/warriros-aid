@@ -58,8 +58,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <h2 className="text-2xl font-bold">Get in Touch</h2>
                 <p className="text-muted-foreground">
-                  Whether you have questions about our programs, want to volunteer, or need assistance, our team is
-                  ready to help.
+                  Whether you have questions about our programs, want to volunteer, or need assistance, our team is here to help. We value your feedback and are committed to supporting veterans&#39; needs.
                 </p>
 
                 <div className="space-y-4">

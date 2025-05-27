@@ -380,7 +380,7 @@ export default function DonatePage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">
-                      Make checks payable to "Warriors Aid" and mail to:
+                      Make checks payable to &quot;Warriors Aid&quot; and mail to:
                       <br />
                       123 Veterans Way
                       <br />
