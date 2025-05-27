@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Users, DollarSign, Brain, Play, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import React from "react"
 import { animate, stagger } from "animejs"
 
@@ -45,16 +45,8 @@ export default function WarriorsAidLandingPage() {
             <Link href="#mission" className="text-sm font-medium transition-colors hover:text-primary">
               Our Mission
             </Link>
-            <Link href="/impact" className="text-sm font-medium transition-colors hover:text-primary">
-              Our Impact
-            </Link>
-            <Link href="/volunteer" className="text-sm font-medium transition-colors hover:text-primary">
-              Join Us
-            </Link>
+            
           </nav>
-          <Button asChild>
-            <Link href="/donate">Donate Now</Link>
-          </Button>
         </div>
       </header>
 
