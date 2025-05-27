@@ -104,11 +104,11 @@ export default function WarriorsAidLandingPage() {
                 <p className="text-lg">
                   By joining Warriors Aid, you become part of a nationwide movement that recognizes the true cost of
                   service. Support directly impacts veterans in your community, providing them with the resources,
-                  dignity, and respect they've earned through their sacrifice. Together, we can ensure that those who
+                  dignity, and respect they&#39;ve earned through their sacrifice. Together, we can ensure that those who
                   defended our freedom can fully enjoy the liberties they helped protect.
                 </p>
                 <p className="text-lg font-semibold">
-                  The time to act is now. Our veterans stood for us, so now it's time we stand for them.
+                  The time to act is now. Our veterans stood for us, so now it&#39;s time we stand for them.
                 </p>
               </div>
               <Button size="lg" className="mt-6" asChild>
@@ -195,7 +195,7 @@ export default function WarriorsAidLandingPage() {
                 <p className="text-left">
                   This infographic employs statistics and iconography to create an immediate emotional impact. The use
                   of red for the suicide statistics deliberately evokes urgency and alarm, while the minimalist design
-                  ensures the gravity of these numbers isn't lost in visual clutter. By presenting these statistics in
+                  ensures the gravity of these numbers isn&#39;t lost in visual clutter. By presenting these statistics in
                   isolation, we force the viewer to confront the reality of veteran struggles without distraction. The
                   progression from mental health to homelessness to unemployment creates a narrative of cause and effect
                   that educated viewers will immediately comprehend, making a logical appeal (logos) while
@@ -258,7 +258,7 @@ export default function WarriorsAidLandingPage() {
                 <h3 className="text-xl font-bold mb-4">Rationale for Transformation Visual</h3>
                 <p className="text-left">
                   This before/after visual employs a powerful rhetorical technique known as "juxtaposition" to
-                  illustrate the transformative impact of Warriors Aid's programs. The stark contrast between the
+                  illustrate the transformative impact of Warriors Aid&#39;s programs. The stark contrast between the
                   "before" and "after" scenarios creates a compelling narrative arc that resonates with viewers on both
                   emotional and logical levels. The visual establishes ethos (credibility) by showing concrete, tangible
                   outcomes of our work rather than making abstract claims. The parallel structure of the images and
@@ -333,7 +333,7 @@ export default function WarriorsAidLandingPage() {
                   makes the phrase memorable. The first half, "Honoring Their Sacrifice," acknowledges the debt society
                   owes to veterans, appealing to the values and establishing common ground with the audience. The second
                   half, "Rebuilding Their Future," shifts from passive recognition to active intervention, signaling our
-                  organization's commitment to tangible action and forward-looking solutions. This is a call to action
+                  organization&#39;s commitment to tangible action and forward-looking solutions. This is a call to action
                   provided by a short, memorable slogan.
                 </p>
                 <p className="text-left mt-4">
