@@ -1,16 +1,29 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { Users, DollarSign, Brain, Play, ExternalLink } from "lucide-react"
+import { Users, DollarSign, Brain, Play, ExternalLink, Video } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import React from "react"
 import { animate, stagger } from "animejs"
-
 import WarriorsAidLogo from "./logo"
+
+// Add initial animation state via CSS to prevent hydration mismatch
+const initialAnimationStyles = `
+  .hero-animate, .cta-animate {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8);
+    will-change: opacity, transform;
+  }
+`;
 
 export default function WarriorsAidLandingPage() {
   React.useEffect(() => {
+    // Inject initial animation styles only once on mount
+    const style = document.createElement('style');
+    style.innerHTML = initialAnimationStyles;
+    document.head.appendChild(style);
+    // Animate in
     animate(
       ".hero-animate",
       {
@@ -31,6 +44,9 @@ export default function WarriorsAidLandingPage() {
         delay: 800,
       }
     )
+    return () => {
+      document.head.removeChild(style);
+    }
   }, [])
 
   return (
@@ -56,35 +72,46 @@ export default function WarriorsAidLandingPage() {
           <div  >
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center pl-[12vw]">
               <div className="space-y-4 ">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none hero-animate">
+                <h1
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none hero-animate"
+                  style={{ opacity: 0, transform: 'translateY(40px)' }}
+                >
                   Supporting Those Who Served
                 </h1>
-                <p className="text-xl text-muted-foreground md:text-2xl italic hero-animate">
+                <p
+                  className="text-xl text-muted-foreground md:text-2xl italic hero-animate"
+                  style={{ opacity: 0, transform: 'translateY(40px)' }}
+                >
                   "Honoring Their Sacrifice, Rebuilding Their Future"
                 </p>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl hero-animate">
+                <p
+                  className="max-w-[600px] text-muted-foreground md:text-xl hero-animate"
+                  style={{ opacity: 0, transform: 'translateY(40px)' }}
+                >
                   Warriors Aid is dedicated to providing comprehensive support for veterans facing mental health
                   challenges, reintegration difficulties, and financial hardship after their service.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-red-600 hover:bg-red-700 cta-animate" asChild>
+                  <Button
+                    size="lg"
+                    className="bg-red-600 hover:bg-red-700 cta-animate"
+                    asChild
+                    style={{ opacity: 0, transform: 'scale(0.8)' }}
+                  >
                     Join Our Mission
                   </Button>
-                  <Button size="lg" variant="outline" className="cta-animate" asChild>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="cta-animate"
+                    asChild
+                    style={{ opacity: 0, transform: 'scale(0.8)' }}
+                  >
                     <Link href="#mission">Learn More</Link>
                   </Button>
                 </div>
               </div>
-              <div className="mx-auto w-full max-w-[500px] aspect-video relative rounded-xl overflow-hidden shadow-xl">
-                <Image
-                  src="/placeholder.svg?height=500&width=800"
-                  alt="Veterans supporting each other"
-                  width={800}
-                  height={500}
-                  className="object-cover"
-                  priority
-                />
-              </div>
+              
             </div>
           </div>
         </section>
@@ -224,7 +251,8 @@ export default function WarriorsAidLandingPage() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-4xl font-bold text-blue-600">38,000</p>
-                    <p className="text-muted-foreground">Veterans experience homelessness</p>
+                    <img src = "./Screenshot 2025-05-27 212010.png"></img> 
+                    
                   </CardContent>
                   <CardFooter className="pt-0 justify-center">
                     <Link
@@ -288,7 +316,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/a.png?height=400&width=600"
                       alt="Veteran struggling before Warriors Aid support"
                       width={600}
                       height={400}
@@ -307,7 +335,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/b.png?height=400&width=600"
                       alt="Veteran thriving after Warriors Aid support"
                       width={600}
                       height={400}
@@ -345,26 +373,24 @@ export default function WarriorsAidLandingPage() {
         {/* Multimedia Piece: Video Concept */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-50 pl-[9vw]">
           <div className="container px-4 md:px-6 ">
-            <div className="mx-auto max-w-[800px] space-y-6 text-center ">
+            <div className="mx-auto max-w-[800px] max-h-[800px] space-y-6 text-center ">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Hear Their Stories</h2>
               <p className="text-xl text-muted-foreground">Veterans sharing their journey with Warriors Aid</p>
 
               <div className="aspect-video relative rounded-xl overflow-hidden shadow-xl bg-black flex items-center justify-center">
                 <div className="absolute inset-0 opacity-60">
-                  <Image
-                    src="/placeholder.svg?height=500&width=800"
-                    alt="Video thumbnail of veteran testimonial"
+                    <video
+                    src="/VID_20250527_213013_387.mp4"
                     width={800}
-                    height={500}
-                    className="object-cover w-full h-full"
-                  />
+                    height={800}
+                    className="object-cover w-full h-full object-[center_35%]"
+                    controls
+                    >
+                    Sorry, your browser doesn't support embedded videos.
+                    </video>
+                  
                 </div>
-                <div className="relative z-10 flex flex-col items-center gap-4">
-                  <div className="h-20 w-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center cursor-pointer hover:bg-white/30 transition-colors">
-                    <Play className="h-10 w-10 text-white" />
-                  </div>
-                  <p className="text-white text-xl font-medium">Watch: "My Journey Home"</p>
-                </div>
+                
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-md">
