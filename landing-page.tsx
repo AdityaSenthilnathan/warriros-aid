@@ -97,37 +97,91 @@ export default function WarriorsAidLandingPage() {
               <p className="text-xl text-muted-foreground">Why Warriors Aid deserves your support</p>
               <div className="space-y-4 text-left">
                 <p className="text-lg">
-                  Every single day, thousands of veterans struggle silently with the wounds of service. After
-                  sacrificing for their nation, many return home to face battles with PTSD, depression, homelessness,
-                  and unemployment. Warriors Aid was founded on the principle that{" "}
-                  <strong>no veteran should fight these battles alone</strong>.
+        
+                  <strong>Every single day, thousands of veterans carry invisible scars from their time in service.</strong>.
+                  While the uniform may come off, the mental, emotional, and physical toll of military duty often remains. These men and women who once stood in harm&#39;s way to protect our nation too often return home only to face new, silent battles: post-traumatic stress disorder (PTSD), depression, homelessness, substance abuse, unemployment, and social isolation. Despite their sacrifices, many veterans are left to navigate these challenges alone, without the consistent support they deserve.
+                  According to the U.S. Department of Veterans Affairs, an estimated
+                  {" "}<strong>11% to 20% of veterans </strong> 
+                  who served in Operations Iraqi Freedom and Enduring Freedom experience PTSD in a given year, while
+                  {" "}<strong>over 37,000 veterans remain homeless on any given night</strong> {" "}
+                   (U.S. Department of Housing and Urban Development, 2023). These numbers reflect not only suffering, but also a systemic failure to uphold our obligation to those who served.
+
                 </p>
                 <p className="text-lg">
-                  Our organization bridges the gaps in veteran support systems through three initiatives:
-                </p>
+                  <strong>Warriors Aid was founded on a simple yet powerful belief: no veteran should ever be left to fight their battles without support.</strong>
+               {" "}
+               Our mission is rooted in compassion, respect, and a deep commitment to those who have served. We are not just another organization we are a lifeline. Warriors Aid aims to close the critical gaps in care by offering services that empower veterans to rebuild their lives with dignity, purpose, and hope.
+
+               </p> 
+
+               <p className="text-lg">
+                Our organization operates through <strong>three comprehensive initiatives</strong> designed to address the multifaceted needs of our veteran community:
+                  
+               </p> 
                 <ul className="space-y-4 pl-6 list-disc">
                   <li className="text-lg">
-                    <strong>Mental Health Support:</strong> Providing access to specialized counseling, peer support
-                    groups, and innovative therapies designed specifically for combat-related trauma.
+                    <strong>Mental Health Support:</strong> Combat takes a toll that often goes unseen. Access ro trauma-informed care, connecting veterans with licensed counselors, peer support networks, and holistic treatment options should be normalized and provided. Mental health programs are not one-size-fits-all; they are veteran-led, trauma-aware, and rooted in trust. Research shows that peer-led mental health interventions improve engagement and outcomes for veterans with PTSD (National Academies of Sciences, Engineering, and Medicine, 2018).
+
                   </li>
                   <li className="text-lg">
-                    <strong>Reintegration Programs:</strong> Offering job training, educational opportunities, and
-                    community connection services to help veterans transition successfully to civilian life.
+                    <strong>Reintegration Programs</strong> The transition to civilian life can be daunting. Our reintegration initiatives guide veterans through this complex journey by offering job readiness training, mentorship opportunities, higher education resources, resume development workshops, and social reintegration events. The goal is clear: build lasting pathways toward independence, purpose, and community connection.
+
+
                   </li>
                   <li className="text-lg">
-                    <strong>Financial Assistance:</strong> Delivering emergency financial aid, housing support, and
-                    long-term financial planning to ensure stability for veterans and their families.
-                  </li>
+                    <strong>Financial Assistance:</strong> Too many veterans face immediate and long-term financial instability. Whether it&#39;s emergency rent assistance, help with utility bills, or long-term financial literacy and planning, Warriors Aid is there to offer a steady hand. We work to prevent homelessness, reduce debt, and empower veterans and their families to build sustainable futures. Our support isn&#39;t just about dollars it&#39;s about restoring peace of mind. Studies show that financial instability is a key contributor to veteran homelessness, and targeted aid significantly reduces housing insecurity (HUD Annual Homeless Assessment Report, 2023).
+                    
+                     </li>
+                 
                 </ul>
-                <p className="text-lg">
-                  By joining Warriors Aid, you become part of a movement that recognizes the true cost of
-                  service. Support directly impacts veterans in your community, providing them with the resources,
-                  dignity, and respect they&#39;ve earned through their sacrifice. Together, we can ensure that those who
-                  defended our freedom can fully enjoy the liberties they helped protect.
-                </p>
-                <p className="text-lg font-semibold">
-                  The time to act is now. Our veterans stood for us, so now it&#39;s time we stand for them.
-                </p>
+                <p className="text-lg" ><strong>When you support Warriors Aid, you are doing more than donating to a cause you are standing beside a veteran. </strong>Involvement directly impacts lives. Critical resources can be provided to ensure veterans are treated with the respect they&#39;ve earned, and reaffirm the promise that their sacrifices will not be forgotten.
+</p>                  <p className="text-lg"><strong>Now is the time to act.</strong> We owe our freedoms to those who served. Let us ensure that their return home is met with open arms, not closed doors. Join Warriors Aid, and together, we will create a future where every veteran is seen, supported, and never left behind.
+</p>
+              </div>
+
+              <div className="text-sm text-muted-foreground mt-8 text-left space-y-2">
+                <div>
+                  <span className="align-baseline">
+                    <sub>1</sub>
+                  </span>{" "}
+                  U.S. Department of Veterans Affairs. PTSD: National Center for PTSD Statistics.{" "}
+                  <a
+                    href="https://www.ptsd.va.gov/understand/common/common_veterans.asp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-700 hover:text-blue-900"
+                  >
+                    https://www.ptsd.va.gov/understand/common/common_veterans.asp
+                  </a>
+                </div>
+                <div>
+                  <span className="align-baseline">
+                    <sub>2</sub>
+                  </span>{" "}
+                  U.S. Department of Housing and Urban Development (HUD). 2023 Annual Homeless Assessment Report to Congress.{" "}
+                  <a
+                    href="https://www.huduser.gov/portal/sites/default/files/pdf/2023-AHAR-Part-1.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-700 hover:text-blue-900"
+                  >
+                    https://www.huduser.gov/portal/sites/default/files/pdf/2023-AHAR-Part-1.pdf
+                  </a>
+                </div>
+                <div>
+                  <span className="align-baseline">
+                    <sub>3</sub>
+                  </span>{" "}
+                  National Academies of Sciences, Engineering, and Medicine. Evaluation of the Department of Veterans Affairs Mental Health Services. Washington, DC: The National Academies Press, 2018.{" "}
+                  <a
+                    href="https://doi.org/10.17226/24915"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-blue-700 hover:text-blue-900"
+                  >
+                    https://doi.org/10.17226/24915
+                  </a>
+                </div>
               </div>
               
             </div>
@@ -148,7 +202,7 @@ export default function WarriorsAidLandingPage() {
                     <CardTitle className="text-center text-2xl">Mental Health</CardTitle>
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-4xl font-bold text-red-600">-17%</p>
+                    <p className="text-4xl font-bold text-red-600">17%</p>
                     <p className="text-muted-foreground">Decrease in veteran suicide rate</p>
                   </CardContent>
                   <CardFooter className="pt-0 justify-center">
