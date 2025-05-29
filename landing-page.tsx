@@ -251,7 +251,7 @@ export default function WarriorsAidLandingPage() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-4xl font-bold text-blue-600">38,000</p>
-                    <img src = "./Screenshot 2025-05-27 212010.png"></img> 
+                    <img src="/warriros-aid/Screenshot%202025-05-27%20212010.png"></img> 
                     
                   </CardContent>
                   <CardFooter className="pt-0 justify-center">
@@ -316,7 +316,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src={typeof window !== 'undefined' && window.location.pathname.startsWith('/warriros-aid') ? '/warriros-aid/a.png' : '/a.png'}
+                      src="/warriros-aid/a.png"
                       alt="Veteran struggling before Warriors Aid support"
                       width={600}
                       height={400}
@@ -335,7 +335,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/b.png?height=400&width=600"
+                      src="/warriros-aid/b.png"
                       alt="Veteran thriving after Warriors Aid support"
                       width={600}
                       height={400}
@@ -380,7 +380,7 @@ export default function WarriorsAidLandingPage() {
               <div className="aspect-video relative rounded-xl overflow-hidden shadow-xl bg-black flex items-center justify-center">
                 <div className="absolute inset-0 opacity-60">
                     <video
-                    src="/VID_20250527_213013_387.mp4"
+                    src="/warriros-aid/VID_20250527_213013_387.mp4"
                     width={800}
                     height={800}
                     className="object-cover w-full h-full object-[center_35%]"
