@@ -8,9 +8,6 @@ import React from "react"
 import { animate, stagger } from "animejs"
 import WarriorsAidLogo from "./logo"
 
-// Utility to get the correct asset prefix for GitHub Pages
-const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 // Add initial animation state via CSS to prevent hydration mismatch
 const initialAnimationStyles = `
   .hero-animate, .cta-animate {
@@ -254,7 +251,7 @@ export default function WarriorsAidLandingPage() {
                   </CardHeader>
                   <CardContent className="text-center">
                     <p className="text-4xl font-bold text-blue-600">38,000</p>
-                    <img src={`${assetPrefix}/Screenshot 2025-05-27 212010.png`} />
+                    <img src = "./Screenshot 2025-05-27 212010.png"></img> 
                     
                   </CardContent>
                   <CardFooter className="pt-0 justify-center">
@@ -319,7 +316,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src={`${assetPrefix}/a.png`}
+                      src="/a.png?height=400&width=600"
                       alt="Veteran struggling before Warriors Aid support"
                       width={600}
                       height={400}
@@ -338,7 +335,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src={`${assetPrefix}/b.png`}
+                      src="/b.png?height=400&width=600"
                       alt="Veteran thriving after Warriors Aid support"
                       width={600}
                       height={400}
@@ -383,7 +380,7 @@ export default function WarriorsAidLandingPage() {
               <div className="aspect-video relative rounded-xl overflow-hidden shadow-xl bg-black flex items-center justify-center">
                 <div className="absolute inset-0 opacity-60">
                     <video
-                    src={`${assetPrefix}/VID_20250527_213013_387.mp4`}
+                    src="/VID_20250527_213013_387.mp4"
                     width={800}
                     height={800}
                     className="object-cover w-full h-full object-[center_35%]"
