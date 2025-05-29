@@ -316,7 +316,7 @@ export default function WarriorsAidLandingPage() {
                 <div className="space-y-4">
                   <div className="aspect-video relative rounded-xl overflow-hidden shadow-md">
                     <Image
-                      src="/a.png?height=400&width=600"
+                      src={typeof window !== 'undefined' && window.location.pathname.startsWith('/warriros-aid') ? '/warriros-aid/a.png' : '/a.png'}
                       alt="Veteran struggling before Warriors Aid support"
                       width={600}
                       height={400}
