@@ -402,7 +402,7 @@ export default function WarriorsAidLandingPage() {
                   emotional connection with viewers. The video format allows for a strong narrative, showing
                   the challenges, the intervention, and the transformation, which builds a compelling logical case for
                   our effectiveness. The more grounded production style, with less polished images, values signal respect for
-                  both the subject matter and the audience, acknowledging the value of each person, beyond just an image alone. The title "My Journey Home" frames the
+                  both the subject matter and the audience, acknowledging the value of each person, beyond just an image alone. The video frames the
                   veteran experience as an ongoing process rather than a fixed state, inviting viewers to see themselves
                   as potential participants in that journey rather than mere observers.
                 </p>
